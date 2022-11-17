@@ -2,7 +2,7 @@
   "name": "squid-evm-template",
   "private": true,
   "scripts": {
-    "build": "del lib && tsc",
+    "build": "rm -rf lib && tsc",
     "db:migrate": "npx squid-typeorm-migration apply",
     "processor:start": "node lib/processor.js",
     "query-node:start": "squid-graphql-server",
